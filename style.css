@@ -1,0 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url("./media/massimiliano-morosinotto-1237156-unsplash.jpg");
+  background-size: cover;
+}
+
+body section {
+  height: 100vh;
+}
+/*# sourceMappingURL=style.css.map */
