@@ -9,8 +9,7 @@
 </head>
 <body>
     <header>
-        <div id="myMenu">
-            <!--<img src="./media/my_logo_by_luneriane_d9mmunj-fullview.png" alt="Logo Luneriane">-->
+        <div id="popMenu" onclick="poppingMenu()">
             <ul>
                 <li><a href="#presentation">Présentation</a></li>
                 <li><a href="#realisations">Réalisations</a></li>
@@ -19,7 +18,7 @@
             </ul>
         </div>
         <nav>
-            <span><a href="#presentation">Présentation</a></span>
+            <span><a href="#presentation" onclick="myScroll()">Présentation</a></span>
             <span><a href="#realisations">Réalisations</a></span>
             <span><a href="#liens">Liens</a></span>
             <span><a href="#contact">Contact</a></span>
@@ -116,5 +115,7 @@
     <footer>
         <p>2019 - Luneriane</p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="./javascript.js"></script>
 </body>
 </html>

@@ -17,10 +17,11 @@ body header {
   height: 8em;
 }
 
-body header #myMenu {
+body header #popMenu {
   position: fixed;
-  top: 1em;
+  top: 1.5em;
   left: 3em;
+  z-index: 5;
   width: 6em;
   height: 6em;
   border-radius: 50%;
@@ -33,30 +34,39 @@ body header #myMenu {
           box-shadow: 0 0 2em rgba(255, 255, 255, 0.5);
 }
 
-body header #myMenu img {
-  position: relative;
-  width: 90%;
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
-  -webkit-transform: translate(50%);
-          transform: translate(50%);
-  border: solid blue 5px;
+body header #popMenu:hover {
+  background-color: white;
+  -webkit-box-shadow: 0 0 2em white;
+          box-shadow: 0 0 2em white;
 }
 
-body header #myMenu ul {
+body header #popMenu ul {
   position: relative;
   margin-left: 100%;
   margin-top: 50%;
   list-style: none;
 }
 
-body header #myMenu ul li {
+body header #popMenu ul li {
   margin-left: 1em;
-  margin-bottom: 0.5em;
-  width: 8em;
-  padding: 0.5em;
-  background-color: rgba(0, 0, 0, 0.75);
+  margin-bottom: 0.3em;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 0.5em;
+}
+
+body header #popMenu ul li a {
+  display: inline-block;
+  margin-left: 1em;
+  line-height: 2em;
+  text-decoration: none;
+  color: white;
+}
+
+body header #popMenu ul li:hover a {
+  text-shadow: 0 0 0.5em #ffffd2;
+  letter-spacing: 0.1em;
+  background-color: black;
 }
 
 body header nav {
@@ -74,13 +84,39 @@ body header nav span {
   margin: 1em 2em;
 }
 
+body header nav span a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 0 0 0.5em white;
+  line-height: 3em;
+}
+
+body header nav span a:hover {
+  color: gold;
+  text-shadow: 0 0 0.75em gold;
+  -webkit-text-decoration: dotted blue 0.1em;
+          text-decoration: dotted blue 0.1em;
+}
+
 body h1, body h2, body h3 {
   font-family: 'Lobster', cursive;
+}
+
+body h1 {
+  font-size: 3.5em;
+  margin: 0 0 1em;
   text-align: center;
+  text-shadow: 0 0 0.5em darkblue;
+}
+
+body h2 {
+  font-size: 2.5em;
 }
 
 body section {
   height: 100vh;
+  padding: 1em;
+  text-align: justify;
 }
 
 body footer {
